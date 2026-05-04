@@ -1,404 +1,696 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impactos da IA no Meio Ambiente</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impactos da IA no Meio Ambiente</title>
+    <style>
+      /* Estilos Básicos e Fáceis de Entender */
+      body {
+        background-color: #0f1115; /* Cor de fundo escura */
+        color: #e8e8ea; /* Cor do texto clara */
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
 
-  <nav>
-    <ul>
-      <li><a href="#introducao">Introdução</a></li>
-      <li><a href="#numeros">Números</a></li>
-      <li><a href="#ciclo-de-vida">Ciclo de vida</a></li>
-      <li><a href="#energia">Energia &amp; Carbono</a></li>
-      <li><a href="#agua">Água</a></li>
-      <li><a href="#lixo">Lixo eletrônico</a></li>
-      <li><a href="#justica">Justiça ambiental</a></li>
-      <li><a href="#mitigacao">Mitigação</a></li>
-      <li><a href="#bibliografia">Bibliografia</a></li>
-      <li><a href="autores.html">Autores</a></li>
-    </ul>
-  </nav>
+      /* Barra de Navegação */
+      nav {
+        background-color: #1a1d24;
+        border-bottom: 1px solid #2a2e37;
+        padding: 15px;
+        position: sticky; /* Fica presa no topo */
+        top: 0;
+        z-index: 100;
+      }
 
-  <header class="hero">
-    <h1>Impactos da <span>IA</span> no Meio Ambiente</h1>
-    <p>Um estudo sobre o consumo de energia, água, minerais e o ciclo de vida da infraestrutura por trás da inteligência artificial.</p>
-    <div class="botoes">
-      <a href="#introducao" class="btn btn-primario">Começar a ler</a>
-      <a href="autores.html" class="btn btn-secundario">Ver autores</a>
-    </div>
-  </header>
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
 
-  <section id="introducao">
-    <h2>Introdução</h2>
-    <p>Atualmente muito se fala sobre o aumento da produtividade e benefícios na utilização de inteligências artificiais generativas, como para fazer pesquisas escolares e acadêmicas ou o uso de agentes em IDEs para explicação de código-fonte ou sugestão de melhorias. Uma pesquisa do <strong>Observatório Fundação Itaú e do Datafolha</strong> aponta que 93% das 2.798 pessoas entrevistadas utilizam alguma ferramenta de IA. Além disso, estatísticas divulgadas pela Hostinger preveem um aumento na taxa de crescimento anual de 37,7% no mercado de IA.</p>
-    <p>Esses números reforçam a ideia de que cada vez mais a inteligência artificial será integrada em nosso dia a dia. O "boom" na inteligência artificial ocorreu graças ao desenvolvimento da IA generativa, que permite que IA gere textos, imagens e vídeos em resposta a prompts. Em 2022, com o lançamento do <strong>ChatGPT</strong>, a utilização de chatbots foi consolidada devido ao GPT-3, um Large Language Model treinado em 175 bilhões de parâmetros.</p>
-    <p>Porém existe um lado oculto no aumento da utilização da IA, que é seu impacto no meio ambiente e utilização de recursos naturais.</p>
+      nav ul li {
+        display: inline-block;
+        margin: 5px 10px;
+      }
 
-    <div class="callout">
-      <h3>O paradoxo da IA</h3>
-      <p>A IA é, ao mesmo tempo, ferramenta e fardo. Por um lado, o <strong>Programa das Nações Unidas para o Meio Ambiente (PNUMA)</strong> usa IA para detectar emissões de metano em instalações de petróleo e gás, mapear dragagem destrutiva de areia e melhorar previsões climáticas. Por outro, a infraestrutura que sustenta esses modelos consome eletricidade, água e minerais raros em escala planetária — e produz toneladas de lixo eletrônico tóxico.</p>
-      <p class="citacao">"Ainda há muito que não sabemos sobre o impacto ambiental da IA, mas alguns dos dados que temos são preocupantes. Precisamos ter certeza de que o efeito líquido da IA no planeta é positivo antes de implantarmos a tecnologia em escala." — <strong>Golestan (Sally) Radwan</strong>, Diretora Digital do PNUMA</p>
-    </div>
-  </section>
+      nav ul li a {
+        color: #9a9aa3;
+        text-decoration: none;
+        font-size: 14px;
+      }
 
-  <section id="numeros" class="secao-alternada">
-    <h2>Em números</h2>
-    <p class="subtitulo-secao">Dados de pesquisas recentes (PNUMA, EESI, IEA, ONU e estudos científicos revisados por pares) revelam a escala da pegada ambiental da IA.</p>
-    <div class="estatisticas">
-      <div class="estatistica">
-        <h3>552 t</h3>
-        <p>de CO₂eq emitidas no treinamento do GPT-3 (175B parâmetros)</p>
-      </div>
-      <div class="estatistica">
-        <h3>10×</h3>
-        <p>mais eletricidade por requisição ao ChatGPT vs. uma busca no Google</p>
-      </div>
-      <div class="estatistica">
-        <h3>~519 ml</h3>
-        <p>de água por prompt de 100 palavras em modelos como o ChatGPT</p>
-      </div>
-      <div class="estatistica">
-        <h3>8 mi</h3>
-        <p>de data centers em operação — eram 500 mil em 2012</p>
-      </div>
-      <div class="estatistica">
-        <h3>16 Mt</h3>
-        <p>de lixo eletrônico cumulativo de servidores de IA até 2030</p>
-      </div>
-      <div class="estatistica">
-        <h3>800 kg</h3>
-        <p>de matérias-primas para fabricar um único computador de 2 kg</p>
-      </div>
-      <div class="estatistica">
-        <h3>~35%</h3>
-        <p>do consumo elétrico da Irlanda virá de data centers até 2026</p>
-      </div>
-      <div class="estatistica">
-        <h3>5 mi gal</h3>
-        <p>de água/dia em um data center grande — equivale a uma cidade de 10 a 50 mil pessoas</p>
-      </div>
-    </div>
-  </section>
+      nav ul li a:hover {
+        color: #22c55e; /* Fica verde ao passar o mouse */
+      }
 
-  <section id="ciclo-de-vida">
-    <h2>O ciclo de vida da IA</h2>
-    <p class="subtitulo-secao">A maior parte do debate público se concentra apenas no consumo elétrico durante o uso. Mas um estudo de 2025 publicado por pesquisadores da Universidade de Bonn, Hugging Face e parceiros — <em>"More than Carbon: Cradle-to-Grave environmental impacts of GenAI training on the Nvidia A100 GPU"</em> — analisou <strong>16 categorias de impacto</strong> ao longo de todas as fases da vida de uma GPU, a peça central da IA moderna.</p>
+      /* Área de Destaque (Topo) */
+      .hero {
+        text-align: center;
+        padding: 80px 20px;
+        border-bottom: 1px solid #2a2e37;
+      }
 
-    <div class="cards">
-      <div class="card card-destaque">
-        <h3>1. Extração e fabricação</h3>
-        <p>Mineração de cobre, ouro, lítio, cobalto e terras raras. Fabricação de chips em fundições altamente intensivas em água e energia.</p>
-        <ul>
-          <li><strong>94%</strong> dos impactos de toxicidade humana (câncer) vêm da fabricação</li>
-          <li><strong>81%</strong> da depleção de recursos minerais vêm desta fase</li>
-          <li>O chip da GPU é responsável por <strong>82%</strong> da pegada de fabricação de uma A100</li>
-          <li>O dissipador de cobre concentra <strong>91%</strong> dos impactos cancerígenos do hardware</li>
-        </ul>
-      </div>
-      <div class="card card-destaque">
-        <h3>2. Uso (treinamento e inferência)</h3>
-        <p>Eletricidade para rodar GPUs, refrigerar racks e manter data centers ativos 24/7.</p>
-        <ul>
-          <li><strong>96,8%</strong> das emissões de CO₂ do treinamento do GPT-4 vêm desta fase</li>
-          <li><strong>96%</strong> da depleção de combustíveis fósseis</li>
-          <li><strong>86%</strong> do uso de água atribuído ao treinamento</li>
-          <li>Inferência: GPT-3 em 16 GPUs A100 levou ~3 segundos por batch de 32 prompts</li>
-        </ul>
-      </div>
-      <div class="card card-destaque">
-        <h3>3. Distribuição</h3>
-        <p>Transporte aéreo de componentes de altíssimo valor entre Ásia, Europa e Américas.</p>
-        <ul>
-          <li>GPUs montadas tipicamente em Shenzhen e enviadas por avião</li>
-          <li>Contribui ~12% das emissões totais por GPU em algumas configurações</li>
-          <li>Pequena fração relativa, mas significativa em valor absoluto</li>
-        </ul>
-      </div>
-      <div class="card card-destaque">
-        <h3>4. Fim de vida</h3>
-        <p>Descarte ou reciclagem após 2 a 5 anos — vida útil curta para um produto tão denso em materiais.</p>
-        <ul>
-          <li>Servidores de IA contêm chumbo, cromo, cádmio, mercúrio e antimônio</li>
-          <li>Apenas processos legais entram nos modelos — descarte ilegal subestima impactos</li>
-          <li>Polímeros das placas (PCBs) não são biodegradáveis e contaminam o solo</li>
-        </ul>
-      </div>
-    </div>
+      .hero h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
 
-    <div class="callout">
-      <h3>Visão de túnel do carbono</h3>
-      <p>Os pesquisadores cunharam o termo <em>"carbon tunnel vision"</em> para descrever a obsessão por medir apenas emissões de CO₂. O treinamento do GPT-4, por exemplo, foi equivalente ao "orçamento ambiental" anual de <strong>11.522 habitantes</strong> do planeta apenas para mudanças climáticas, mas seus impactos em toxicidade humana, eutrofização de água doce e depleção de minerais raros excedem qualquer orçamento individual em todas as 16 categorias avaliadas.</p>
-    </div>
-  </section>
+      .hero h1 span {
+        color: #22c55e; /* Verde para IA */
+      }
 
-  <section id="energia" class="secao-alternada">
-    <h2>Energia &amp; Carbono</h2>
-    <p class="subtitulo-secao">Cada modelo de linguagem deixa um rastro mensurável de carbono. A tabela abaixo, baseada no estudo <em>LLMCarbon</em> (Faiz et al., 2024), compara o impacto operacional de modelos reais durante seu treinamento.</p>
+      .hero p {
+        color: #9a9aa3;
+        max-width: 700px;
+        margin: 0 auto 30px;
+        font-size: 18px;
+      }
 
-    <div class="tabela-wrapper">
-      <table class="tabela-comparativa">
-        <thead>
-          <tr>
-            <th>Modelo</th>
-            <th>Desenvolvedor</th>
-            <th>Parâmetros</th>
-            <th>GPUs/TPUs</th>
-            <th>Dias de treino</th>
-            <th>Emissão (tCO₂eq)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>T5</td><td>Google</td><td>11 B</td><td>512 TPUv3</td><td>20</td><td>46,7</td></tr>
-          <tr><td>GPT-3</td><td>OpenAI</td><td>175 B</td><td>10.000 V100</td><td>14,8</td><td><strong>552,1</strong></td></tr>
-          <tr><td>GShard (MoE)</td><td>Google</td><td>619 B</td><td>1.024 TPUv3</td><td>3,1</td><td>4,3</td></tr>
-          <tr><td>Switch (MoE)</td><td>Google</td><td>1.500 B</td><td>1.024 TPUv3</td><td>27</td><td>59,1</td></tr>
-          <tr><td>XLM</td><td>Meta</td><td>0,55 B</td><td>512 V100</td><td>20,4</td><td>39,0</td></tr>
-        </tbody>
-      </table>
-    </div>
+      /* Botões */
+      .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        margin: 5px;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+      }
 
-    <p>Para contexto: <strong>552 tCO₂eq</strong> equivalem ao consumo elétrico anual de cerca de 120 lares brasileiros — gerados em apenas 14 dias de treinamento. E isso considera apenas a fase de treino, sem contar inferência, experimentação e armazenamento, que somados podem superar o treino.</p>
+      .btn-primario {
+        background-color: #22c55e;
+        color: #0f1115;
+      }
 
-    <h3 class="subtitulo">Carbono operacional vs. embutido</h3>
-    <p>O carbono <strong>operacional</strong> é o emitido durante o uso. O carbono <strong>embutido</strong> é o emitido na fabricação do hardware. Quando o data center usa energia majoritariamente fóssil, o operacional domina. Mas em data centers Meta, alimentados em <strong>97% por fontes renováveis</strong>, o carbono embutido representa <strong>92% a 95%</strong> do total — o que torna a vida útil prolongada do hardware tão importante quanto a fonte de energia.</p>
+      .btn-secundario {
+        border: 1px solid #2a2e37;
+        color: #e8e8ea;
+      }
 
-    <div class="cards">
-      <div class="card">
-        <h3>PUE — Power Usage Effectiveness</h3>
-        <p>Razão entre a energia total do data center e a energia usada apenas pela computação. Um PUE ideal seria 1,0; data centers de IA modernos operam com PUE entre 1,09 e 1,2.</p>
-      </div>
-      <div class="card">
-        <h3>CFE — Carbon-Free Energy</h3>
-        <p>Percentual da eletricidade vinda de fontes livres de carbono. O Google reporta data centers como <code>europe-north1</code> em 91% CFE (127 gCO₂eq/kWh) versus <code>us-central1</code> em 97% CFE mas ainda 394 gCO₂eq/kWh, devido a fatores de rede.</p>
-      </div>
-      <div class="card">
-        <h3>H100 vs. V100</h3>
-        <p>Migrar GPT-3 das antigas V100 para H100 reduz a pegada operacional em <strong>71%</strong>. Trocar por TPUv4 reduz em <strong>41%</strong>. Hardware mais eficiente é uma das alavancas mais imediatas.</p>
-      </div>
-      <div class="card">
-        <h3>Arquiteturas MoE</h3>
-        <p>Modelos <em>Mixture of Experts</em> ativam apenas parte de seus parâmetros por consulta. O GShard, com 619 bilhões de parâmetros, emitiu menos CO₂ no treinamento que o GPT-3, com 175 bilhões.</p>
-      </div>
-    </div>
-  </section>
+      /* Seções de Texto */
+      section {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 60px 20px;
+      }
 
-  <section id="agua">
-    <h2>O sede da IA</h2>
-    <p class="subtitulo-secao">Apenas <strong>3% da água da Terra é doce</strong>, e somente 0,5% é acessível e segura para consumo humano. Mesmo assim, data centers competem cada vez mais com comunidades por essas reservas.</p>
+      h2 {
+        color: #22c55e;
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
 
-    <div class="cards">
-      <div class="card">
-        <h3>Quanto consomem?</h3>
-        <ul>
-          <li>Data center médio: <strong>110 milhões</strong> de galões/ano (≈ 1.000 lares)</li>
-          <li>Data center grande: até <strong>5 milhões de galões/dia</strong></li>
-          <li>EUA somam 5.426 data centers consumindo ~163,7 bilhões de galões/ano</li>
-          <li>~<strong>80% da água</strong> retirada evapora; o restante volta como efluente quente</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Onde dói mais</h3>
-        <ul>
-          <li>Norte da Virgínia (EUA): mais de <strong>300 data centers</strong> consumiram cerca de 2 bilhões de galões em 2023 — alta de <strong>63%</strong> em 4 anos</li>
-          <li>Loudoun County sozinho: ~900 milhões de galões em 2023</li>
-          <li>Taiwan: fundições de chips concentradas em zona com secas recorrentes</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>O custo invisível dos chips</h3>
-        <ul>
-          <li>Uma fábrica de chips típica usa <strong>10 milhões de galões/dia</strong> de água ultrapura</li>
-          <li>São necessários ~<strong>1.500 galões</strong> de água encanada para produzir 1.000 galões de água ultrapura</li>
-          <li>Cada chip já consumiu milhares de galões antes de chegar ao data center</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Água indireta (via energia)</h3>
-        <ul>
-          <li>56% da eletricidade dos data centers nos EUA vem de combustíveis fósseis</li>
-          <li>Carvão: <strong>19.185 galões/MWh</strong> de geração</li>
-          <li>Gás natural: <strong>2.800 galões/MWh</strong></li>
-          <li>Solar e eólica: praticamente zero</li>
-        </ul>
-      </div>
-    </div>
+      h3 {
+        color: #e8e8ea;
+        margin-top: 30px;
+      }
 
-    <h3 class="subtitulo">WUE — a métrica da eficiência hídrica</h3>
-    <p>Da mesma forma que o PUE mede eficiência energética, o <strong>Water Usage Effectiveness (WUE)</strong> mede litros de água por kWh consumido. A média entre data centers é <strong>1,9 L/kWh</strong>; o ideal seria 0, atingível apenas em sistemas totalmente refrigerados a ar.</p>
+      p {
+        margin-bottom: 15px;
+        color: #9a9aa3;
+      }
 
-    <h3 class="subtitulo">Tecnologias de refrigeração</h3>
-    <div class="cards">
-      <div class="card">
-        <h3>Refrigeração evaporativa (aberta)</h3>
-        <p>Uso intensivo de água. Comparável à irrigação por inundação na agricultura.</p>
-      </div>
-      <div class="card">
-        <h3>Ciclo fechado (closed-loop)</h3>
-        <p>Reuso da mesma água várias vezes. Pode reduzir o uso de água doce em até <strong>70%</strong>.</p>
-      </div>
-      <div class="card">
-        <h3>Direct-to-chip</h3>
-        <p>Líquido refrigerante entregue direto às GPUs e CPUs. Significativamente mais eficiente.</p>
-      </div>
-      <div class="card">
-        <h3>Imersão (immersion cooling)</h3>
-        <p>Servidores submersos em fluidos dielétricos sintéticos. Custo inicial alto, mas economia drástica de água e espaço.</p>
-      </div>
-    </div>
-  </section>
+      strong {
+        color: #e8e8ea;
+      }
 
-  <section id="lixo" class="secao-alternada">
-    <h2>Lixo eletrônico</h2>
-    <p class="subtitulo-secao">O mundo já produzia <strong>62 milhões de toneladas</strong> de lixo eletrônico em 2022 (ONU). A IA generativa está prestes a adicionar uma onda inédita: um estudo publicado por pesquisadores da Academia Chinesa de Ciências e da UC Santa Barbara projeta que servidores de LLMs gerarão <strong>até 16 milhões de toneladas</strong> cumulativas de e-waste entre 2020 e 2030 — taxa de crescimento anual composta de até <strong>110%</strong>, contra apenas 2,8% do lixo eletrônico convencional.</p>
+      /* Caixas de Destaque */
+      .callout {
+        background-color: #1a1d24;
+        border-left: 5px solid #22c55e;
+        padding: 25px;
+        margin: 30px 0;
+        border-radius: 4px;
+      }
 
-    <div class="cards">
-      <div class="card">
-        <h3>Distribuição geográfica</h3>
-        <ul>
-          <li>América do Norte: <strong>58%</strong></li>
-          <li>Leste Asiático: <strong>25%</strong></li>
-          <li>Europa: <strong>14%</strong></li>
-        </ul>
-        <p>Concentração extrema. A vantagem é que rastreabilidade é mais viável; o risco é que comunidades específicas absorvam impactos desproporcionais.</p>
-      </div>
-      <div class="card">
-        <h3>Materiais tóxicos cumulativos até 2030</h3>
-        <ul>
-          <li>Chumbo: <strong>917 mil toneladas</strong></li>
-          <li>Antimônio: 7 mil toneladas</li>
-          <li>Bário: 6 mil toneladas</li>
-          <li>Cromo: 907 toneladas</li>
-          <li>Cádmio: 30 toneladas</li>
-          <li>Arsênio: 34 toneladas</li>
-          <li>Mercúrio: 7 toneladas</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Riscos à saúde</h3>
-        <p>Exposição prolongada a esses metais pesados está associada a abortos espontâneos, malformações fetais, mutações genéticas, disfunção tireoidiana, redução da função pulmonar e distúrbios neurocomportamentais.</p>
-      </div>
-      <div class="card">
-        <h3>Tesouro escondido</h3>
-        <p>Os mesmos servidores descartados contêm cobre, alumínio, ferro, ouro, prata, platina e paládio que, se reciclados, valem aproximadamente <strong>US$ 70 bilhões</strong>. Minerar ouro de eletrônicos descartados emite <strong>80% menos CO₂</strong> que extraí-lo do minério bruto.</p>
-      </div>
-    </div>
+      .citacao {
+        font-style: italic;
+        color: #e8e8ea;
+        border-left: 2px solid #2a2e37;
+        padding-left: 15px;
+        margin-top: 15px;
+      }
 
-    <h3 class="subtitulo">Estratégias de economia circular</h3>
-    <div class="cards">
-      <div class="card">
-        <h3>Extensão de vida útil</h3>
-        <p>Estender a vida média dos servidores em apenas 1 ano (em uso secundário, "downcycling") pode reduzir o e-waste cumulativo em até <strong>58%</strong> — estratégia mais eficaz medida.</p>
-      </div>
-      <div class="card">
-        <h3>Reuso modular</h3>
-        <p>Desmontagem e reaproveitamento de GPUs, CPUs e baterias em outros sistemas. Reduz o e-waste em ~<strong>21%</strong> (3,4 Mt).</p>
-      </div>
-      <div class="card">
-        <h3>Repropósito educacional</h3>
-        <p>GPUs antigas, mesmo obsoletas para LLMs de fronteira, ainda atendem tarefas como NLP de pequena escala, automação básica, projetos Linux e media centers escolares.</p>
-      </div>
-      <div class="card">
-        <h3>Centros circulares</h3>
-        <p>A Microsoft mantém <em>Circular Centers</em> na Europa e América do Norte que processam mais de 10 mil servidores por mês: <strong>83%</strong> são repropostos e <strong>22%</strong> dos materiais são reciclados.</p>
-      </div>
-    </div>
-  </section>
+      /* Grade para Números e Cards */
+      .grade {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+      }
 
-  <section id="justica">
-    <h2>Justiça ambiental e a "atribuição assimétrica"</h2>
-    <p class="subtitulo-secao">O estudo da Universidade de Bonn destaca uma assimetria crítica: <strong>quem usufrui da IA não é, em geral, quem arca com seus custos ambientais</strong>.</p>
+      .card {
+        background-color: #1a1d24;
+        border: 1px solid #2a2e37;
+        padding: 25px;
+        flex: 1 1 250px; /* Tenta ter 250px, mas se ajusta */
+        border-radius: 8px;
+      }
 
-    <div class="callout">
-      <p>"Populações nas economias ocidentais e tecnologicamente avançadas — principais beneficiárias dos serviços de IA — sofrem predominantemente impactos globais difusos como mudança climática. Já populações marginalizadas em regiões de extração, processamento, manufatura e descarte recebem benefícios mínimos enquanto absorvem degradação ambiental local concentrada (emissões tóxicas, depleção de recursos, danos a ecossistemas)." — Falk et al., 2025</p>
-    </div>
+      .card h3 {
+        margin-top: 0;
+        color: #22c55e;
+      }
 
-    <div class="cards">
-      <div class="card">
-        <h3>Onde se extrai</h3>
-        <p>Mineração de cobalto na República Democrática do Congo, lítio no triângulo andino, terras raras em Mianmar e China. Mineração intensiva, frequentemente em condições insalubres.</p>
-      </div>
-      <div class="card">
-        <h3>Onde se fabrica</h3>
-        <p>Fundições concentradas em Taiwan, Coreia do Sul, China e Japão — regiões enfrentando estresse hídrico recorrente. Em 2023, agricultores de Taiwan ficaram sem água para que fábricas de chips continuassem operando.</p>
-      </div>
-      <div class="card">
-        <h3>Onde se opera</h3>
-        <p>Data centers em Iowa (EUA) treinaram o GPT-4 em rede elétrica majoritariamente fóssil. Em Loudoun County (Virgínia), comunidades disputam recursos hídricos com gigantes da nuvem.</p>
-      </div>
-      <div class="card">
-        <h3>Onde se descarta</h3>
-        <p>Boa parte do e-waste mundial termina em redes informais de reciclagem em Gana, Nigéria, Índia e Paquistão, onde trabalhadores queimam placas a céu aberto para recuperar metais.</p>
-      </div>
-    </div>
-  </section>
+      .card ul {
+        padding-left: 20px;
+        color: #9a9aa3;
+      }
 
-  <section id="mitigacao" class="secao-alternada">
-    <h2>Mitigação: o que pode ser feito</h2>
-    <p class="subtitulo-secao">O PNUMA, em nota publicada em 2024, propôs <strong>cinco eixos</strong> para reduzir o impacto ambiental da IA. Estudos científicos complementares apontam alavancas técnicas concretas.</p>
+      /* Tabelas */
+      .tabela-container {
+        margin: 20px 0;
+      }
 
-    <div class="cards">
-      <div class="card">
-        <h3>1. Padronizar a medição</h3>
-        <p>Hoje há escassez de dados confiáveis. É preciso estabelecer procedimentos padronizados para medir e divulgar o impacto ambiental de cada modelo e serviço.</p>
-      </div>
-      <div class="card">
-        <h3>2. Regulamentar a transparência</h3>
-        <p>Exigir, por lei, que empresas divulguem as consequências ambientais diretas de seus produtos baseados em IA — algo análogo ao que existe para emissões automotivas.</p>
-      </div>
-      <div class="card">
-        <h3>3. Algoritmos mais eficientes</h3>
-        <p>Destilação de modelos, quantização, poda (pruning), arquiteturas MoE e técnicas de paralelismo otimizado podem reduzir o uso de energia em <strong>16% a 39%</strong> em treinamentos típicos.</p>
-      </div>
-      <div class="card">
-        <h3>4. Data centers verdes</h3>
-        <p>Energia renovável, refrigeração de circuito fechado, reuso de água e localização em climas frios. A meta de Microsoft, Google e AWS é "carbono negativo" ou "zero water" até 2030.</p>
-      </div>
-      <div class="card">
-        <h3>5. Integração regulatória</h3>
-        <p>Inserir políticas de IA dentro de marcos ambientais existentes — não tratar como tema separado. UE e EUA já introduziram propostas legislativas, mas ainda são exceções.</p>
-      </div>
-      <div class="card">
-        <h3>Bônus: Green AI</h3>
-        <p>O movimento <em>Green AI</em> (Schwartz et al., 2020) propõe que eficiência computacional seja reportada como métrica principal em pesquisas de ML — ao lado de acurácia, relevância e velocidade.</p>
-      </div>
-    </div>
+      table {
+        background-color: #1a1d24;
+      }
 
-    <div class="callout">
-      <h3>O que você pode fazer</h3>
-      <ul class="lista-acoes">
-        <li>Use modelos menores e específicos para tarefas simples — não toda pergunta exige um LLM de 175B</li>
-        <li>Prefira ferramentas que divulgam suas pegadas energéticas (Hugging Face mantém um <em>tracker</em> aberto)</li>
-        <li>Cobre transparência: pergunte de onde vem a energia dos serviços que você usa</li>
-        <li>Apoie a economia circular: reciclar eletrônicos vale tanto materialmente quanto ambientalmente</li>
-        <li>Discuta o tema — invisibilidade é o maior aliado do impacto</li>
+      th,
+      td {
+        text-align: left;
+        padding: 15px;
+        border-bottom: 1px solid #2a2e37;
+      }
+
+      th {
+        color: #22c55e;
+        background-color: rgba(34, 197, 94, 0.1);
+      }
+
+      /* Rodapé e Bibliografia */
+      footer {
+        background-color: #1a1d24;
+        padding: 60px 20px;
+        border-top: 1px solid #2a2e37;
+        margin-top: 60px;
+      }
+
+      .footer-content {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .referencia {
+        font-size: 14px;
+        margin-bottom: 15px;
+        padding-left: 10px;
+        border-left: 2px solid #2a2e37;
+        color: #9a9aa3;
+      }
+
+      .creditos {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 13px;
+        color: #9a9aa3;
+        border-top: 1px solid #2a2e37;
+        padding-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#introducao">Introdução</a></li>
+        <li><a href="#numeros">Números</a></li>
+        <li><a href="#ciclo-de-vida">Ciclo de vida</a></li>
+        <li><a href="#energia">Energia & Carbono</a></li>
+        <li><a href="#agua">Água</a></li>
+        <li><a href="#lixo">Lixo eletrônico</a></li>
+        <li><a href="#justica">Justiça ambiental</a></li>
+        <li><a href="#mitigacao">Mitigação</a></li>
+        <li><a href="autores.html">Autores</a></li>
       </ul>
-    </div>
-  </section>
+    </nav>
 
-  <footer id="bibliografia">
-    <div class="footer-conteudo">
-      <h2>Bibliografia</h2>
-      <p class="referencia">FALK, S.; EKCHAJZER, D.; PIRSON, T. et al. <strong>More than Carbon: Cradle-to-Grave environmental impacts of GenAI training on the Nvidia A100 GPU.</strong> arXiv:2509.00093v3, 2025.</p>
-      <p class="referencia">FAIZ, A.; KANEDA, S.; WANG, R. et al. <strong>LLMCarbon: Modeling the End-to-End Carbon Footprint of Large Language Models.</strong> arXiv:2309.14393v2, 2024.</p>
-      <p class="referencia">WANG, P.; ZHANG, L.-Y.; TZACHOR, A.; MASANET, E.; CHEN, W.-Q. <strong>E-waste Challenges of Generative Artificial Intelligence.</strong> Brief Communication, 2024. DOI: 10.21203/rs.3.rs-3978528/v1.</p>
-      <p class="referencia">YAÑEZ-BARNUEVO, M. <strong>Data Centers and Water Consumption.</strong> Environmental and Energy Study Institute (EESI), 2024.</p>
-      <p class="referencia">PNUMA. <strong>A IA gera um problema ambiental. Veja o que o mundo pode fazer a respeito.</strong> Programa das Nações Unidas para o Meio Ambiente, 2024.</p>
-      <p class="referencia">PNUMA. <strong>Navigating New Horizons: A Global Foresight Report on Planetary Health and Human Wellbeing.</strong> Nairobi, 2024.</p>
-      <p class="referencia">IEA. <strong>Electricity 2024: Analysis and forecast to 2026.</strong> Paris: International Energy Agency, 2024.</p>
-      <p class="referencia">SCHWARTZ, R.; DODGE, J.; SMITH, N. A.; ETZIONI, O. <strong>Green AI.</strong> Communications of the ACM, v. 63, n. 12, p. 54-63, 2020.</p>
-      <p class="referencia">LUCCIONI, A. S.; VIGUIER, S.; LIGOZAT, A.-L. <strong>Estimating the carbon footprint of BLOOM, a 176B parameter language model.</strong> Journal of Machine Learning Research, v. 24, n. 253, p. 1–15, 2023.</p>
-      <p class="referencia">STRUBELL, E.; GANESH, A.; MCCALLUM, A. <strong>Energy and Policy Considerations for Deep Learning in NLP.</strong> arXiv:1906.02243, 2019.</p>
-      <p class="referencia">FORTI, V.; BALDÉ, C. P.; KUEHR, R.; BEL, G. <strong>The Global E-waste Monitor 2020: Quantities, flows and the circular economy potential.</strong> ONU/UNITAR, 2020.</p>
-      <p class="referencia">COMPASS UOL. <strong>Nova pesquisa do Observatório Fundação Itaú mostra que os brasileiros usam a IA, percebem sua presença no dia a dia, mas ainda não sabem bem o que é.</strong> Disponível em: fundacaoitau.org.br.</p>
-      <p class="referencia">SANTANA, B. <strong>Estatísticas sobre IA: dados e tendências.</strong> Hostinger, 2026.</p>
-      <p class="creditos">Universidade Paulista &mdash; UNIP &mdash; Ciência da Computação &mdash; 8&ordm; Semestre &mdash; 2026</p>
-    </div>
-  </footer>
+    <header class="hero">
+      <h1>Impactos da <span>IA</span> no Meio Ambiente</h1>
+      <p>
+        Um estudo sobre o consumo de energia, água, minerais e o ciclo de vida
+        da infraestrutura por trás da inteligência artificial.
+      </p>
+      <div>
+        <a href="#introducao" class="btn btn-primario">Começar a ler</a>
+        <a href="autores.html" class="btn btn-secundario">Ver autores</a>
+      </div>
+    </header>
 
-</body>
+    <section>
+      <h2>Introdução</h2>
+      <p>
+        Atualmente muito se fala sobre o aumento da produtividade e benefícios
+        na utilização de inteligências artificiais generativas, como para fazer
+        pesquisas escolares e acadêmicas ou o uso de agentes em IDEs para
+        explicação de código-fonte ou sugestão de melhorias. Uma pesquisa do
+        <strong>Observatório Fundação Itaú e do Datafolha</strong> aponta que
+        93% das 2.798 pessoas entrevistadas utilizam alguma ferramenta de IA.
+        Além disso, estatísticas divulgadas pela Hostinger preveem um aumento na
+        taxa de crescimento anual de 37,7% no mercado de IA.
+      </p>
+      <p>
+        Esses números reforçam a ideia de que cada vez mais a inteligência
+        artificial será integrada em nosso dia a dia. O "boom" na inteligência
+        artificial ocorreu graças ao desenvolvimento da IA generativa, que
+        permite que IA gere textos, imagens e vídeos em resposta a prompts. Em
+        2022, com o lançamento do <strong>ChatGPT</strong>, a utilização de
+        chatbots foi consolidada devido ao GPT-3, um Large Language Model
+        treinado em 175 bilhões de parâmetros.
+      </p>
+      <p>
+        Porém existe um lado oculto no aumento da utilização da IA, que é seu
+        impacto no meio ambiente e utilização de recursos naturais.
+      </p>
+
+      <div class="callout">
+        <h3>O paradoxo da IA</h3>
+        <p>
+          A IA é, ao mesmo tempo, ferramenta e fardo. Por um lado, o
+          <strong
+            >Programa das Nações Unidas para o Meio Ambiente (PNUMA)</strong
+          >
+          usa IA para detectar emissões de metano em instalações de petróleo e
+          gás, mapear dragagem destrutiva de areia e melhorar previsões
+          climáticas. Por outro, a infraestrutura que sustenta esses modelos
+          consome eletricidade, água e minerais raros em escala planetária — e
+          produz toneladas de lixo eletrônico tóxico.
+        </p>
+        <p class="citacao">
+          "Ainda há muito que não sabemos sobre o impacto ambiental da IA, mas
+          alguns dos dados que temos são preocupantes. Precisamos ter certeza de
+          que o efeito líquido da IA no planeta é positivo antes de implantarmos
+          a tecnologia em escala." — <strong>Golestan (Sally) Radwan</strong>,
+          Diretora Digital do PNUMA
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Em números</h2>
+      <p>
+        Dados de pesquisas recentes revelam a escala da pegada ambiental da IA.
+      </p>
+      <div class="grade">
+        <div class="card">
+          <h3>552 t</h3>
+          <p>de CO₂eq emitidas no treinamento do GPT-3 (175B parâmetros)</p>
+        </div>
+        <div class="card">
+          <h3>10×</h3>
+          <p>
+            mais eletricidade por requisição ao ChatGPT vs. uma busca no Google
+          </p>
+        </div>
+        <div class="card">
+          <h3>~519 ml</h3>
+          <p>de água por prompt de 100 palavras em modelos como o ChatGPT</p>
+        </div>
+        <div class="card">
+          <h3>8 mi</h3>
+          <p>de data centers em operação — eram 500 mil em 2012</p>
+        </div>
+        <div class="card">
+          <h3>16 Mt</h3>
+          <p>de lixo eletrônico cumulativo de servidores de IA até 2030</p>
+        </div>
+        <div class="card">
+          <h3>800 kg</h3>
+          <p>de matérias-primas para fabricar um único computador de 2 kg</p>
+        </div>
+        <div class="card">
+          <h3>~35%</h3>
+          <p>do consumo elétrico da Irlanda virá de data centers até 2026</p>
+        </div>
+        <div class="card">
+          <h3>5 mi gal</h3>
+          <p>
+            de água/dia em um data center grande — equivale a uma cidade de 10 a
+            50 mil pessoas
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>O ciclo de vida da IA</h2>
+      <p>
+        Um estudo de 2025 analisou 16 categorias de impacto ao longo de todas as
+        fases da vida de uma GPU, a peça central da IA moderna.
+      </p>
+
+      <div class="grade">
+        <div class="card">
+          <h3>1. Extração e fabricação</h3>
+          <p>Mineração de cobre, ouro, lítio, cobalto e terras raras.</p>
+          <ul>
+            <li>
+              <strong>94%</strong> dos impactos de toxicidade humana vêm da
+              fabricação
+            </li>
+            <li>
+              <strong>81%</strong> da depleção de recursos minerais vêm desta
+              fase
+            </li>
+            <li>
+              O chip da GPU é responsável por <strong>82%</strong> da pegada de
+              fabricação
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>2. Uso (treino e inferência)</h3>
+          <p>Eletricidade para rodar GPUs e refrigerar data centers.</p>
+          <ul>
+            <li>
+              <strong>96,8%</strong> das emissões de CO₂ do GPT-4 vêm desta fase
+            </li>
+            <li><strong>96%</strong> da depleção de combustíveis fósseis</li>
+            <li>
+              <strong>86%</strong> do uso de água atribuído ao treinamento
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>3. Distribuição</h3>
+          <p>Transporte aéreo de componentes entre Ásia, Europa e Américas.</p>
+          <ul>
+            <li>GPUs montadas na China e enviadas por avião</li>
+            <li>Contribui ~12% das emissões totais por GPU</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>4. Fim de vida</h3>
+          <p>Descarte ou reciclagem após 2 a 5 anos.</p>
+          <ul>
+            <li>Servidores contêm chumbo, cromo, cádmio e mercúrio</li>
+            <li>Apenas processos legais entram nos modelos oficiais</li>
+            <li>Polímeros (PCBs) contaminam o solo</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout">
+        <h3>Visão de túnel do carbono</h3>
+        <p>
+          Os pesquisadores cunharam o termo <em>"carbon tunnel vision"</em> para
+          descrever a obsessão por medir apenas emissões de CO₂. O treinamento
+          do GPT-4 foi equivalente ao orçamento ambiental anual de 11.522
+          pessoas, mas seus impactos em toxicidade e minerais raros são ainda
+          maiores.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Energia & Carbono</h2>
+      <div class="tabela-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Modelo</th>
+              <th>Desenvolvedor</th>
+              <th>Parâmetros</th>
+              <th>GPUs/TPUs</th>
+              <th>Dias de treino</th>
+              <th>Emissão (tCO₂eq)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>T5</td>
+              <td>Google</td>
+              <td>11 B</td>
+              <td>512 TPUv3</td>
+              <td>20</td>
+              <td>46,7</td>
+            </tr>
+            <tr>
+              <td>GPT-3</td>
+              <td>OpenAI</td>
+              <td>175 B</td>
+              <td>10.000 V100</td>
+              <td>14,8</td>
+              <td><strong>552,1</strong></td>
+            </tr>
+            <tr>
+              <td>GShard (MoE)</td>
+              <td>Google</td>
+              <td>619 B</td>
+              <td>1.024 TPUv3</td>
+              <td>3,1</td>
+              <td>4,3</td>
+            </tr>
+            <tr>
+              <td>Switch (MoE)</td>
+              <td>Google</td>
+              <td>1.500 B</td>
+              <td>1.024 TPUv3</td>
+              <td>27</td>
+              <td>59,1</td>
+            </tr>
+            <tr>
+              <td>XLM</td>
+              <td>Meta</td>
+              <td>0,55 B</td>
+              <td>512 V100</td>
+              <td>20,4</td>
+              <td>39,0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Para contexto: <strong>552 tCO₂eq</strong> equivalem ao consumo elétrico
+        anual de cerca de 120 lares brasileiros.
+      </p>
+
+      <h3>Carbono operacional vs. embutido</h3>
+      <p>
+        O carbono <strong>operacional</strong> é o emitido durante o uso. O
+        carbono <strong>embutido</strong> é o emitido na fabricação do hardware.
+        Em data centers alimentados por energia renovável, o carbono embutido
+        pode representar até 95% do total.
+      </p>
+
+      <div class="grade">
+        <div class="card">
+          <h3>PUE</h3>
+          <p>
+            Razão entre a energia total e a energia usada apenas pela
+            computação. O ideal é 1,0.
+          </p>
+        </div>
+        <div class="card">
+          <h3>CFE</h3>
+          <p>Percentual da eletricidade vinda de fontes livres de carbono.</p>
+        </div>
+        <div class="card">
+          <h3>H100 vs. V100</h3>
+          <p>
+            Migrar para hardware mais moderno reduz a pegada operacional em até
+            71%.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Arquiteturas MoE</h3>
+          <p>
+            Modelos que ativam apenas parte dos parâmetros por consulta
+            economizam energia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>A sede da IA</h2>
+      <p>
+        Apenas 3% da água da Terra é doce. Mesmo assim, data centers competem
+        com comunidades por essas reservas.
+      </p>
+
+      <div class="grade">
+        <div class="card">
+          <h3>Quanto consomem?</h3>
+          <ul>
+            <li>Data center médio: 110 milhões de galões/ano</li>
+            <li>Data center grande: até 5 milhões de galões/dia</li>
+            <li>~80% da água retirada evapora</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Onde dói mais</h3>
+          <ul>
+            <li>Virgínia (EUA): consumiu 2 bilhões de galões em 2023</li>
+            <li>Taiwan: secas afetam a produção de chips</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Custo dos chips</h3>
+          <p>
+            Uma fábrica típica usa 10 milhões de galões/dia de água ultrapura
+            para fabricar os componentes.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Água via energia</h3>
+          <p>
+            Carvão usa 19.185 galões/MWh, enquanto solar e eólica usam
+            praticamente zero.
+          </p>
+        </div>
+      </div>
+
+      <h3>WUE e Refrigeração</h3>
+      <p>
+        O <strong>WUE (Water Usage Effectiveness)</strong> mede litros de água
+        por kWh. Novas tecnologias como refrigeração por imersão e ciclo fechado
+        ajudam a reduzir esse consumo.
+      </p>
+    </section>
+
+    <section>
+      <h2>Lixo eletrônico</h2>
+      <p>
+        O mundo produzia 62 milhões de toneladas de lixo eletrônico em 2022.
+        Servidores de IA podem adicionar mais 16 milhões de toneladas até 2030.
+      </p>
+
+      <div class="grade">
+        <div class="card">
+          <h3>Materiais tóxicos</h3>
+          <p>
+            Até 2030 teremos 917 mil toneladas de chumbo e toneladas de outros
+            metais pesados como mercúrio e cádmio.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Riscos à saúde</h3>
+          <p>
+            A exposição a esses metais causa problemas graves como malformações
+            e doenças neurocomportamentais.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Tesouro escondido</h3>
+          <p>
+            Reciclar esses materiais vale US$ 70 bilhões e emite 80% menos CO₂
+            que a mineração bruta.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Economia circular</h3>
+          <p>
+            Estender a vida dos servidores em 1 ano reduz o lixo em 58%. A
+            Microsoft já reusa 83% de seus servidores.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Justiça ambiental</h2>
+      <div class="callout">
+        <p>
+          "Quem usufrui da IA não é quem arca com seus custos ambientais.
+          Populações marginalizadas absorvem a degradação local." — Falk et al.,
+          2025
+        </p>
+      </div>
+      <div class="grade">
+        <div class="card">
+          <h3>Extração</h3>
+          <p>Congo (cobalto), Andes (lítio), Mianmar (terras raras).</p>
+        </div>
+        <div class="card">
+          <h3>Fabricação</h3>
+          <p>Ásia enfrenta estresse hídrico para produzir chips.</p>
+        </div>
+        <div class="card">
+          <h3>Descarte</h3>
+          <p>E-waste termina em Gana, Nigéria e Índia em redes informais.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Mitigação: o que pode ser feito</h2>
+      <div class="grade">
+        <div class="card">
+          <h3>1. Medição</h3>
+          <p>Padronizar como o impacto é divulgado pelas empresas.</p>
+        </div>
+        <div class="card">
+          <h3>2. Transparência</h3>
+          <p>Leis que exijam a divulgação das consequências ambientais.</p>
+        </div>
+        <div class="card">
+          <h3>3. Algoritmos</h3>
+          <p>Técnicas que reduzem o uso de energia em até 39%.</p>
+        </div>
+        <div class="card">
+          <h3>4. Data Centers</h3>
+          <p>Uso de energia renovável e refrigeração eficiente.</p>
+        </div>
+      </div>
+
+      <div class="callout">
+        <h3>O que você pode fazer</h3>
+        <ul>
+          <li>Use modelos menores para tarefas simples.</li>
+          <li>Prefira ferramentas transparentes sobre sua energia.</li>
+          <li>Apoie a economia circular e recicle eletrônicos.</li>
+          <li>Discuta o tema — a visibilidade ajuda a mudar o cenário.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <h2>Bibliografia</h2>
+        <p class="referencia">
+          FALK, S. et al.
+          <strong
+            >More than Carbon: Cradle-to-Grave environmental impacts.</strong
+          >
+          2025.
+        </p>
+        <p class="referencia">
+          FAIZ, A. et al.
+          <strong>LLMCarbon: Modeling the End-to-End Carbon Footprint.</strong>
+          2024.
+        </p>
+        <p class="referencia">
+          WANG, P. et al.
+          <strong>E-waste Challenges of Generative AI.</strong> 2024.
+        </p>
+        <p class="referencia">
+          YAÑEZ-BARNUEVO, M.
+          <strong>Data Centers and Water Consumption.</strong> EESI, 2024.
+        </p>
+        <p class="referencia">
+          PNUMA. <strong>A IA gera um problema ambiental.</strong> 2024.
+        </p>
+        <p class="referencia">
+          SCHWARTZ, R. et al. <strong>Green AI.</strong> 2020.
+        </p>
+        <p class="referencia">
+          LUCCIONI, A. S. et al.
+          <strong>Estimating the carbon footprint of BLOOM.</strong> 2023.
+        </p>
+        <p class="referencia">
+          IEA. <strong>Electricity 2024.</strong> International Energy Agency,
+          2024.
+        </p>
+
+        <div class="creditos">
+          Universidade Paulista — UNIP — Ciência da Computação — 8º Semestre —
+          2026
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
